@@ -14,11 +14,28 @@
     }
 
     function getNext() {
-        // TODO
+        document.getElementsByClassName('slider__photo')[slide].classList.remove('active');
+
+        if (slide === document.getElementsByClassName('slider__photo').length - 1) {
+            slide = 0;
+        } else {
+            slide++;
+        }
+
+        // slide = (slide === totalItems - 1) ? 0 : slide++;
+
+        document.getElementsByClassName('slider__photo')[slide].classList.add('active');
     }
 
     function getPrev(){
-        // TODO      
+        document.getElementsByClassName('slider__photo')[slide].classList.remove('active');
+
+        if (slide === 0) {
+            slide = document.getElementsByClassName('slider__photo').length - 1;
+        } else {
+            slide--;
+        }
+        document.getElementsByClassName('slider__photo')[slide].classList.add('active');
     }
 
     function initSlider() {
