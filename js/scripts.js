@@ -16,13 +16,7 @@
     function getNext() {
         document.getElementsByClassName('slider__photo')[slide].classList.remove('active');
 
-        if (slide === document.getElementsByClassName('slider__photo').length - 1) {
-            slide = 0;
-        } else {
-            slide++;
-        }
-
-        // slide = (slide === totalItems - 1) ? 0 : slide++;
+        slide = (slide === totalItems - 1) ? 0 : (slide + 1);
 
         document.getElementsByClassName('slider__photo')[slide].classList.add('active');
     }
