@@ -559,3 +559,50 @@ em {
 
 
 /*.people*/
+
+/* styling for scroll top button START */
+.fixed-button {
+    display: inline-block;
+    background-color: #FF9800;  
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;   
+    transition: background-color .3s;
+    z-index: 1000;
+}
+
+.scroll-top-btn {
+    right: 30px;
+    width: 50px;
+}
+
+.print-page-btn {
+    right: 100px;
+    color: white;
+    width: 150px;
+    padding: 10px 0;
+}
+
+.fixed-button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+.fixed-button:active {
+    background-color: #555;
+}
+
+.scroll-top-btn::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+  
+/* styling for scroll top button END */
