@@ -166,65 +166,14 @@ function checkSpace(sample) {
     return sample === '' || sample.indexOf(' ') > -1;
 }
 
-/**
- * this function looks under the form with name "registration"
- * look under the "username" input field and returns the value of it
- * returns nothing if no value is found
- * 
- * @returns [Boolean] true when valid, false otherwise
- */
-function getUserName() {
-    if (typeof(document.registration.username.value) === 'undefined') {
-        return '';
-    } else {
-        return document.registration.username.value;
-    }   
+function subtract(a, b) {
+
 }
 
-function getFirstName() {
-    if (typeof(document.registration.firstname.value) === 'undefined') {
-        return '';
-    } else {
-        return document.registration.firstname.value;
-    }   
+function multiply(a, b) {
+
 }
 
-function getLastName() {
-    if (typeof(document.registration.lastname.value) === 'undefined') {
-        return '';
-    } else {
-        return document.registration.lastname.value;
-    }   
-}
+function divide(a, b) {
 
-function getPhoneNumber() {
-    if (typeof(document.registration.phonenumber.value) === 'undefined') {
-        return '';
-    } else {
-        return document.registration.phonenumber.value;
-    }   
-}
-
-function getEmail() {
-    if (typeof(document.registration.email.value) === 'undefined') {
-        return '';
-    } else {
-        return document.registration.email.value;
-    }   
-}
-
-function getPassword() {
-    if (typeof(document.registration.password.value) === 'undefined') {
-        return '';
-    } else {
-        return document.registration.password.value;
-    }   
-}
-
-function getConfirmPassword() {
-    if (typeof(document.registration.password_confirm.value) === 'undefined') {
-        return '';
-    } else {
-        return document.registration.password_confirm.value;
-    }   
 }
