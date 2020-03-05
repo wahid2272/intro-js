@@ -15,6 +15,7 @@ function validateForm(e){
             && validateFirstName()
             && validateLastName()
         ) {
+        debugger;
         var _newUser = getUserDataObj();   
         // add code to update registeredUsers array with new username and call render function
         // TODO
@@ -135,7 +136,24 @@ function validatePassword() {
         return false;
     }
 
+    if (checkForNumber(_password)) {
+        return false;
+    }
+
     return true;
+}
+
+/**
+ * check whether there is at least 1 digit character in the sample text
+ * @param {string} sample password string to be examined
+ * @return {Boolean} true if there is at least 1 number in sample, false otherwise
+ */
+function checkForNumber(sample) {
+    if (sample.match(/[0-9]+/g).length > 0) {
+        return true;
+    }
+    
+    return false;
 }
 
 /**
